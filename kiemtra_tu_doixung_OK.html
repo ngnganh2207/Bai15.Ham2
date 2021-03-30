@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="isPalindrome()">
+<script>
+    function isPalindrome(){
+        var input = prompt("Nhập từ cần kiểm tra");
+        //var output = ""
+        var a = 0;
+        var b = input.length-1;
+        var result = true;
+        while(a<b){
+            if(input[a]!==input[b]){
+               result=false;
+            }
+            a++;
+            b--;
+        }
+        if(result){
+            alert(input+ " là từ đối xứng");
+        }else {
+            alert(input+ " không là từ đối xứng");
+        }
+    }
+</script>
+
+</body>
+</html>
